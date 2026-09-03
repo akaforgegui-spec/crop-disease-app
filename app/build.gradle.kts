@@ -33,17 +33,17 @@ android {
         kotlinCompilerExtensionVersion = "1.5.0"
     }
     
-    // This strips out duplicate background files causing the crash
+    // This strips out duplicate background files causing crashes
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-            excludes += "META-INF/LICENSE"
-            excludes += "META-INF/LICENSE.txt"
-            excludes += "META-INF/LICENSE.md"
-            excludes += "META-INF/NOTICE"
-            excludes += "META-INF/NOTICE.txt"
-            excludes += "META-INF/NOTICE.md"
-            excludes += "META-INF/DEPENDENCIES"
+            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
+            excludes.add("META-INF/LICENSE")
+            excludes.add("META-INF/LICENSE.txt")
+            excludes.add("META-INF/LICENSE.md")
+            excludes.add("META-INF/NOTICE")
+            excludes.add("META-INF/NOTICE.txt")
+            excludes.add("META-INF/NOTICE.md")
+            excludes.add("META-INF/DEPENDENCIES")
         }
     }
 }
