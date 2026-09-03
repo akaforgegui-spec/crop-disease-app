@@ -61,8 +61,9 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
 
-    // Fixes the Guava ListenableFuture conflict
+    // Fixes the Guava ListenableFuture conflict perfectly
     implementation("com.google.guava:guava:31.1-android")
+    implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 
     // ONNX Runtime
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.17.0")
