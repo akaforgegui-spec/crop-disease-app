@@ -35,4 +35,3 @@ jobs:
         with:
           name: CropDiseaseDetector-Debug
           path: app/build/outputs/apk/debug/*.apk
-          
